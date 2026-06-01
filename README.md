@@ -1,6 +1,6 @@
-# 🚀 **DevOps Project: ZOMATO Clone App Deployment**
+# 🚀 **End-to-End-CI-CD-Pipeline-for-Food-Delivery-Application.**
 
-In this **DevOps project**, I demonstrate how to **deploy a ZOMATO Clone App** using a variety of modern DevOps tools and services.
+
 
 ## 🛠️ Tools & Services Used:
 
