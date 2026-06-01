@@ -17,52 +17,218 @@
 
 ---
 
-### Project Stages:
 
-1. **Stage 1** - Deployment of App to Docker Container
-2. **Stage 2** - Deployment of App to K8S Cluster with Monitoring
 
----
 
-### 📂 GitHub Repo Link:  
-[**ZOMATO Clone DevOps Project**](#)
+# End-to-End CI/CD Pipeline for Food Delivery Application
 
-### 📹 DevOps Project Video Link:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtu.be/GyoI6-I68aQ)
+<p align="center">
+  <img src="./screenshots/architecture-diagram.png" alt="Project Architecture" width="900"/>
+</p>
 
-### 📺 Docker Playlist Video Link:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PLs-PsDpuAuTeNx3OgGQ1QrpNBo-XE6VBh)
+## Project Overview
 
----
+This project demonstrates the implementation of a complete DevOps CI/CD pipeline for a containerized Food Delivery Application using modern DevOps practices, security scanning, monitoring, Kubernetes orchestration, and GitOps deployment strategies.
 
-## 📂 Other DevOps Projects
+The objective of this project is to automate the software delivery lifecycle, improve deployment reliability, enforce security standards, and provide real-time monitoring of application and infrastructure health.
 
-### 🟠 **SWIGGY App Project**:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtu.be/x55z7rk0NAU)
-
-### 🔵 **SonarQube Video Link**:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=sonarqube&logoColor=white)](https://youtu.be/ScdedztTaAU)
-
-### 🟡 **Nexus Video Link**:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=nexus&logoColor=white)](https://youtu.be/opJAfDOCZuI)
+The project covers Continuous Integration, Continuous Deployment, Security Scanning, Containerization, Monitoring, Kubernetes Orchestration, and GitOps-based deployment workflows.
 
 ---
 
-## Connect with me on LinkedIn:  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kastro-kiran/)
+## Architecture
 
-## Join the WhatsApp Group for DevOps technical discussions!
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/EGw6ZlwUHZc82cA0vXFnwm) 
+Developer → GitHub → Jenkins → SonarQube → OWASP Dependency Check → Trivy Security Scan → Docker Build → DockerHub → Kubernetes (EKS) → ArgoCD → Application Deployment
 
----
+Monitoring Stack:
 
-### Feedback Request:  
-
-After deploying the app, please share your opinion on LinkedIn along with the Project link and tag me on LinkedIn. Help the video reach wider DevOps enthusiasts.
+Prometheus → Node Exporter → Grafana Dashboards
 
 ---
 
-## Happy learning!  
-<img src="https://media.licdn.com/dms/image/v2/D5603AQHJB_lF1d9OSw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718971147172?e=1735776000&v=beta&t=HC_e0eOufPvf8XQ0P7iI9GDm9hBSIh5FwQaGsL_8ivo" alt="Kastro Profile Image" width="100" height="100" style="border-radius:50%;">
+## Key Features
 
-KASTRO KIRAN V
+- Automated CI/CD Pipeline using Jenkins
+- Static Code Analysis using SonarQube
+- Dependency Vulnerability Scanning using OWASP Dependency Check
+- Container Security Scanning using Trivy
+- Docker Containerization
+- DockerHub Image Management
+- Kubernetes Deployment using Amazon EKS
+- GitOps Deployment using ArgoCD
+- Infrastructure Monitoring using Prometheus
+- Dashboard Visualization using Grafana
+- Automated Email Notifications
+- Security-First DevOps Workflow
+
+---
+
+## Technologies Used
+
+### DevOps Tools
+- Jenkins
+- Docker
+- Kubernetes
+- ArgoCD
+- Git
+- GitHub
+
+### Security Tools
+- SonarQube
+- OWASP Dependency Check
+- Trivy
+- Docker Scout
+
+### Monitoring Tools
+- Prometheus
+- Grafana
+- Node Exporter
+
+### Cloud Platform
+- AWS EC2
+- AWS EKS
+- AWS IAM
+
+### Application Stack
+- Node.js
+- NPM
+
+---
+
+## CI/CD Pipeline Workflow
+
+### Stage 1 – Source Code Management
+Application source code is stored in GitHub and acts as the central repository.
+
+### Stage 2 – Continuous Integration
+Jenkins automatically triggers the pipeline whenever changes are pushed to the repository.
+
+### Stage 3 – Code Quality Analysis
+SonarQube performs static code analysis and enforces quality standards.
+
+### Stage 4 – Security Validation
+OWASP Dependency Check and Trivy perform vulnerability analysis on application dependencies and source files.
+
+### Stage 5 – Docker Image Creation
+The application is containerized using Docker.
+
+### Stage 6 – DockerHub Integration
+Container images are automatically tagged and pushed to DockerHub.
+
+### Stage 7 – Kubernetes Deployment
+The application is deployed to Amazon EKS for container orchestration and scalability.
+
+### Stage 8 – GitOps Delivery
+ArgoCD continuously synchronizes Kubernetes deployments from Git repositories.
+
+### Stage 9 – Monitoring & Observability
+Prometheus collects infrastructure and application metrics while Grafana provides real-time dashboards.
+
+---
+
+## Monitoring Architecture
+
+### Prometheus
+Collects metrics from:
+
+- Jenkins
+- Node Exporter
+- Kubernetes Cluster
+
+### Grafana
+Visualizes:
+
+- CPU Utilization
+- Memory Consumption
+- System Metrics
+- Kubernetes Metrics
+- Jenkins Metrics
+
+### Node Exporter
+Provides host-level operating system metrics.
+
+---
+
+## Security Implementation
+
+- Static Code Analysis using SonarQube
+- Dependency Scanning using OWASP Dependency Check
+- Container Security Scanning using Trivy
+- Docker Image Inspection using Docker Scout
+- Secure Credential Management in Jenkins
+
+---
+
+## AWS Services Used
+
+- Amazon EC2
+- Amazon EKS
+- IAM
+- Security Groups
+- Load Balancers
+
+---
+
+## Project Outcomes
+
+- Fully automated deployment pipeline
+- Faster and reliable software releases
+- Improved application security posture
+- Real-time monitoring and alerting
+- Scalable Kubernetes-based deployment
+- GitOps-based deployment automation
+
+---
+
+## Screenshots
+
+### Jenkins Pipeline
+![Jenkins](./screenshots/jenkins-pipeline.png)
+
+### SonarQube Dashboard
+![SonarQube](./screenshots/sonarqube-dashboard.png)
+
+### Trivy Scan Results
+![Trivy](./screenshots/trivy-scan.png)
+
+### Grafana Dashboard
+![Grafana](./screenshots/grafana-dashboard.png)
+
+### Kubernetes Deployment
+![Kubernetes](./screenshots/kubernetes-pods.png)
+
+### Application Homepage
+![Application](./screenshots/application-homepage.png)
+
+---
+
+## Key Learnings
+
+- End-to-End CI/CD Pipeline Design
+- DevSecOps Practices
+- Containerization with Docker
+- Kubernetes Orchestration
+- GitOps Deployment Strategy
+- Infrastructure Monitoring
+- Cloud-Native Application Deployment
+- Security Automation in DevOps
+
+---
+
+## Future Enhancements
+
+- Terraform Infrastructure as Code
+- Helm Chart Deployment
+- Multi-Environment Deployment Strategy
+- Automated Rollback Mechanism
+- AWS CloudWatch Integration
+- Kubernetes Autoscaling
+- Advanced Alerting System
+
+---
+
+## Author
+
+Utkarsh Rathor
+
+DevOps | Cloud | Automation | Kubernetes | AWS
