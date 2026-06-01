@@ -1,6 +1,12 @@
 # 🚀 **End-to-End-CI-CD-Pipeline-for-Food-Delivery-Application.**
 
+## Project Overview
 
+This project demonstrates the implementation of a complete DevOps CI/CD pipeline for a containerized Food Delivery Application using modern DevOps practices, security scanning, monitoring, Kubernetes orchestration, and GitOps deployment strategies.
+
+The objective of this project is to automate the software delivery lifecycle, improve deployment reliability, enforce security standards, and provide real-time monitoring of application and infrastructure health.
+
+The project covers Continuous Integration, Continuous Deployment, Security Scanning, Containerization, Monitoring, Kubernetes Orchestration, and GitOps-based deployment workflows.
 
 ## 🛠️ Tools & Services Used:
 
@@ -14,25 +20,6 @@
 8. **ArgoCD** ![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
 9. **OWASP** ![OWASP](https://img.shields.io/badge/OWASP-000000?style=flat-square&logo=owasp&logoColor=white)
 10. **Trivy** ![Trivy](https://img.shields.io/badge/Trivy-00979D?style=flat-square&logo=trivy&logoColor=white)
-
----
-
-
-
-
-# End-to-End CI/CD Pipeline for Food Delivery Application
-
-<p align="center">
-  <img src="./screenshots/architecture-diagram.png" alt="Project Architecture" width="900"/>
-</p>
-
-## Project Overview
-
-This project demonstrates the implementation of a complete DevOps CI/CD pipeline for a containerized Food Delivery Application using modern DevOps practices, security scanning, monitoring, Kubernetes orchestration, and GitOps deployment strategies.
-
-The objective of this project is to automate the software delivery lifecycle, improve deployment reliability, enforce security standards, and provide real-time monitoring of application and infrastructure health.
-
-The project covers Continuous Integration, Continuous Deployment, Security Scanning, Containerization, Monitoring, Kubernetes Orchestration, and GitOps-based deployment workflows.
 
 ---
 
@@ -183,22 +170,29 @@ Provides host-level operating system metrics.
 ## Screenshots
 
 ### Jenkins Pipeline
-![Jenkins](./screenshots/jenkins-pipeline.png)
+<img width="953" height="440" alt="6  build" src="https://github.com/user-attachments/assets/326a8af2-ea11-4088-953c-4a8477859d1b" />
 
-### SonarQube Dashboard
-![SonarQube](./screenshots/sonarqube-dashboard.png)
 
-### Trivy Scan Results
-![Trivy](./screenshots/trivy-scan.png)
+### Argo cd
+<img width="941" height="471" alt="image" src="https://github.com/user-attachments/assets/feb7d6ac-3776-48f0-ae69-8d4fca9a100c" />
+
+<img width="940" height="511" alt="image" src="https://github.com/user-attachments/assets/c9f65d77-3b4b-459b-98b5-5cef0dbf489c" />
+
+
+
+### Prometheus Dashboard
+<img width="941" height="377" alt="image" src="https://github.com/user-attachments/assets/464ded26-7bb9-4d2f-994b-577394dc75fd" />
+
 
 ### Grafana Dashboard
-![Grafana](./screenshots/grafana-dashboard.png)
+<img width="941" height="469" alt="image" src="https://github.com/user-attachments/assets/340bd9c5-451f-4bfd-8071-63b316c200e6" />
 
-### Kubernetes Deployment
-![Kubernetes](./screenshots/kubernetes-pods.png)
+<img width="941" height="350" alt="image" src="https://github.com/user-attachments/assets/26dd7bd7-b1c4-415c-9ca0-50df2d809f94" />
 
-### Application Homepage
-![Application](./screenshots/application-homepage.png)
+
+### Application Homepage deployment on Kubernetes port and port number
+<img width="1000" height="708" alt="image" src="https://github.com/user-attachments/assets/015a0a89-f14e-49aa-8fd7-764c275a8cf0" />
+
 
 ---
 
